@@ -321,7 +321,7 @@ h2.title span{
 	font-weight: 400;
 	padding: 30px 20px;
 	font-size: 18px;
-	font-family: 'Roboto', serif;
+	font-family: 'Roboto', sans-serif;
 	color: rgba(255, 255, 255, 0.54);
 	line-height: 30px;
 }
@@ -599,7 +599,7 @@ h2.title span{
 .image-overlay a i{
 	font-size: 50px;
 	color: #fff;
-	margin-top: 96px;
+	margin-top: 65px;
 }
 .portfolio-box:hover .image-overlay{
 	opacity: 1;
