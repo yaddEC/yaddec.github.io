@@ -166,10 +166,39 @@ h5{
 	color: #fff;
 	border-color: #E61D5F;
 }
+.navbar-brand {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff !important;
+	line-height: 40px;
+	padding-top: 25px;
+	position: absolute;
+	left: 40px; 
+}
 
+
+.navbar-nav > li {
+	margin-right: 20px; 
+}
+
+
+
+@media (max-width: 1000px) {
+	.navbar-brand {
+		position: static;
+		line-height: initial;
+		padding-top: 13px;
+	}
+}
+
+
+
+.navbar-brand span {
+		color: #09C3E7;
+}
 /*Global styles
 ==============================================*/
-.section-padding{
+.section-padding {
 	padding: 100px 0px;
 }
 p{
@@ -345,17 +374,7 @@ h2.title span{
 	float: left;
 	margin-right: 20px;
 }
-.navbar-brand{
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #fff!important;
-	line-height: 40px;
-	padding-top: 25px;
-}
-.navbar-brand span{
-	color: #09C3E7;
 
-}
 
 
 /*==================================================
