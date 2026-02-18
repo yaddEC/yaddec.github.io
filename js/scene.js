@@ -853,6 +853,8 @@ class App {
     document.addEventListener('auxclick',    e => e.preventDefault());
 
     this.controls.addEventListener('lock', () => {
+      document.body.classList.add('in-3d');
+      this.startAmbience();
       this._plIgnoreFirstAfterLock = true;
       this._plWarmup = WARMUP_AFTER_LOCK;
     });
@@ -875,13 +877,10 @@ class App {
     document.addEventListener('mouseup',   e => { if (e.button === 2) this.releaseGrab(); });
 
     document.getElementById('enter-3d').addEventListener('click',  () => {
-      document.body.classList.add('in-3d');
       this.controls.lock();
-      this.startAmbience();
     });
     this.canvas.addEventListener('click', () => {
       if (!this.controls.isLocked) this.controls.lock();
-      this.startAmbience();
     });
     this.controls.addEventListener('unlock', () => {
       document.body.classList.remove('in-3d');
